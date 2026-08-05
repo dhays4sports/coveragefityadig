@@ -1,0 +1,14 @@
+{
+  "name": "coveragefit",
+  "version": "3.20.12",
+  "private": true,
+  "description": "CoverageFit with a call-ready Consultation Guide, consultation-first Agent Workspace, consumer-friendly Home assessment, seven-day assessment continuity and respectful Save & Exit, resilient customer-report recovery, privacy-safe producer notifications, evidence-aware consultation handoff, Cloudflare Pages Functions and D1, private prospect reports, workflow management, and pipeline reporting.",
+  "scripts": {
+    "test": "node RUN_REGRESSION_SUITE.js",
+    "cloudflare:dev": "wrangler pages dev .",
+    "cloudflare:functions:build": "wrangler pages functions build --outdir=.cloudflare/functions-dist"
+  },
+  "devDependencies": {
+    "wrangler": "4.114.0"
+  }
+}
