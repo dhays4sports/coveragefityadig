@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0b2f57">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Agent Guide | CoverageFit</title>
+  <meta name="description" content="Internal printable CoverageFit call-ready consultation guide.">
+  <link rel="icon" href="/assets/images/coveragefit-mark.svg">
+  <link rel="stylesheet" href="consultation.css">
+</head>
+<body>
+  <a class="skip-link" href="#consultation-main">Skip to consultation document</a>
+  <header class="document-toolbar" aria-label="Consultation document controls">
+    <div class="document-toolbar__inner">
+      <a class="document-brand" href="/agent/workspace/" aria-label="Return to CoverageFit Agent Workspace">
+        <img src="/assets/images/coveragefit-logo-board.png" alt="CoverageFit">
+      </a>
+      <div class="document-toolbar__context">
+        <span>Internal</span>
+        <strong>Call-Ready Consultation Guide</strong>
+        <small id="documentRecordLabel">Preparing selected record</small>
+      </div>
+      <div class="document-toolbar__actions">
+        <label class="document-toolbar__option"><input id="includeCoverPage" type="checkbox"><span>Include cover page</span></label>
+        <a class="button button--secondary" id="backToWorkspace" href="/agent/workspace/">Back to Workspace</a>
+        <button class="button button--primary" id="printConsultationDocument" type="button" disabled title="Open the browser print dialog and choose Save as PDF if needed">Print / Save PDF</button>
+      </div>
+    </div>
+  </header>
+
+  <noscript>
+    <section class="document-noscript" role="alert">JavaScript is required to open a saved consultation document. Return to the Agent Workspace in a browser with JavaScript enabled.</section>
+  </noscript>
+
+  <main class="document-main" id="consultation-main" tabindex="-1">
+    <div class="sr-only" id="documentAnnouncements" role="status" aria-live="polite" aria-atomic="true"></div>
+    <section class="document-state" id="documentLoading" aria-labelledby="documentLoadingTitle" aria-busy="true">
+      <div class="document-spinner" aria-hidden="true"></div>
+      <div>
+        <span class="eyebrow">Agent guide</span>
+        <h1 id="documentLoadingTitle">Preparing the call-ready guide</h1>
+        <p>CoverageFit is organizing the homeowner’s review, questions to ask, policy checks, discussion topics, and next-action notes.</p>
+      </div>
+    </section>
+
+    <section class="document-state document-state--error" id="documentError" hidden role="alert" aria-labelledby="documentErrorTitle">
+      <div>
+        <span class="eyebrow">Agent guide unavailable</span>
+        <h1 id="documentErrorTitle">The consultation guide could not be opened.</h1>
+        <p id="documentErrorMessage">Return to the Agent Workspace and select a completed homeowner review.</p>
+        <a class="button button--primary" id="documentErrorAction" href="/agent/workspace/">Open Agent Workspace</a>
+      </div>
+    </section>
+
+    <section class="document-preview" id="documentPreview" hidden aria-label="Printable call-ready consultation guide preview">
+      <iframe id="consultationDocumentFrame" title="CoverageFit call-ready consultation guide preview" referrerpolicy="no-referrer"></iframe>
+    </section>
+  </main>
+
+  <script src="/assets/js/property-intelligence.js"></script>
+  <script src="/assets/js/producer-config.js"></script>
+  <script src="/assets/js/consultation-records.js"></script>
+  <script src="/assets/js/protection-score.js"></script>
+  <script src="/assets/js/workspace-data.js"></script>
+  <script src="/assets/js/conversation-planner.js"></script>
+  <script src="/assets/js/consultation-checklist.js"></script>
+  <script src="/assets/js/print-adapters.js"></script>
+  <script src="/assets/js/print-sections.js"></script>
+  <script src="/assets/js/print-visibility.js"></script>
+  <script src="/assets/js/print/models/executive-summary-model.js"></script>
+  <script src="/assets/js/print/models/property-summary-model.js"></script>
+  <script src="/assets/js/print/sections/executive-summary.js"></script>
+  <script src="/assets/js/print/sections/property-summary.js"></script>
+  <script src="/assets/js/print/models/consultation-guide-model.js"></script>
+  <script src="/assets/js/print/sections/consultation-guide.js"></script>
+  <script src="/assets/js/document-composer.js"></script>
+  <script src="/assets/js/print/report-shell.js"></script>
+  <script src="/assets/js/print-renderers.js"></script>
+  <script src="/assets/js/print-engine.js"></script>
+  <script src="/assets/js/consultation-document.js"></script>
+</body>
+</html>
